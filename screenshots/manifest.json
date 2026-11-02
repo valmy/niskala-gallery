@@ -1,0 +1,122 @@
+[
+  {
+    "name": "01_login",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/01_login.png",
+    "finalUrl": "http://localhost:3000/login"
+  },
+  {
+    "name": "02_register",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/02_register.png",
+    "finalUrl": "http://localhost:3000/register"
+  },
+  {
+    "name": "03_password_recovery",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/03_password_recovery.png",
+    "finalUrl": "http://localhost:3000/password-recovery"
+  },
+  {
+    "name": "04_password_recovery_confirm",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/04_password_recovery_confirm.png",
+    "finalUrl": "http://localhost:3000/password-recovery/confirm"
+  },
+  {
+    "name": "05_invitation",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/05_invitation.png",
+    "finalUrl": "http://localhost:3000/invitation"
+  },
+  {
+    "name": "06_dashboard_overview",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/06_dashboard_overview.png",
+    "finalUrl": "http://localhost:3000/dashboard"
+  },
+  {
+    "name": "07_dashboard_social_media",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/07_dashboard_social_media.png",
+    "finalUrl": "http://localhost:3000/dashboard/social-media"
+  },
+  {
+    "name": "08_dashboard_online_media",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/08_dashboard_online_media.png",
+    "finalUrl": "http://localhost:3000/dashboard/online-media"
+  },
+  {
+    "name": "09_dashboard_audience",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/09_dashboard_audience.png",
+    "finalUrl": "http://localhost:3000/dashboard/audience"
+  },
+  {
+    "name": "10_dashboard_stream",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/10_dashboard_stream.png",
+    "finalUrl": "http://localhost:3000/dashboard/stream"
+  },
+  {
+    "name": "11_dashboard_regional_social",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/11_dashboard_regional_social.png",
+    "finalUrl": "http://localhost:3000/dashboard/regional/social"
+  },
+  {
+    "name": "12_dashboard_regional_political",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/12_dashboard_regional_political.png",
+    "finalUrl": "http://localhost:3000/dashboard/regional/political"
+  },
+  {
+    "name": "13_dashboard_regional_economy",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/13_dashboard_regional_economy.png",
+    "finalUrl": "http://localhost:3000/dashboard/regional/economy"
+  },
+  {
+    "name": "14_dashboard_regional_public",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/14_dashboard_regional_public.png",
+    "finalUrl": "http://localhost:3000/dashboard/regional/public"
+  },
+  {
+    "name": "15_dashboard_api_keys",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/15_dashboard_api_keys.png",
+    "finalUrl": "http://localhost:3000/dashboard/api-keys"
+  },
+  {
+    "name": "16_dashboard_api_keys_new",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/16_dashboard_api_keys_new.png",
+    "finalUrl": "http://localhost:3000/dashboard/api-keys/new"
+  },
+  {
+    "name": "17_dashboard_alerts",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/17_dashboard_alerts.png",
+    "finalUrl": "http://localhost:3000/dashboard/alerts"
+  },
+  {
+    "name": "18_dashboard_alerts_new",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/18_dashboard_alerts_new.png",
+    "finalUrl": "http://localhost:3000/dashboard/alerts/new"
+  },
+  {
+    "name": "19_dashboard_alerts_edit_sample",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/19_dashboard_alerts_edit_sample.png",
+    "finalUrl": "http://localhost:3000/dashboard/alerts/1/edit"
+  },
+  {
+    "name": "20_dashboard_tenants",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/20_dashboard_tenants.png",
+    "finalUrl": "http://localhost:3000/dashboard/tenants"
+  },
+  {
+    "name": "21_dashboard_analysis_review",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/21_dashboard_analysis_review.png",
+    "finalUrl": "http://localhost:3000/dashboard/analysis-review"
+  },
+  {
+    "name": "22_dashboard_issue_management",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/22_dashboard_issue_management.png",
+    "finalUrl": "http://localhost:3000/dashboard/issue-management"
+  },
+  {
+    "name": "23_dashboard_pipeline_health",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/23_dashboard_pipeline_health.png",
+    "finalUrl": "http://localhost:3000/dashboard/pipeline-health"
+  },
+  {
+    "name": "24_dashboard_add_item",
+    "path": "/home/tbudiman/.gemini/antigravity/brain/e0e3efa3-cd47-4669-a35f-9b3d01e011f0/screenshots/24_dashboard_add_item.png",
+    "finalUrl": "http://localhost:3000/dashboard/add-item"
+  }
+]

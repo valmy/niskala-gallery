@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niskala Web Application — Screenshots Gallery</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --panel:#171a21;
+    --panel-hover:#1d212a;
+    --border:#2a2f3a;
+    --text:#e8eaee;
+    --muted:#9aa3b2;
+    --accent:#5b9dff;
+    --radius:12px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+  }
+  header{
+    padding:56px 24px 28px;
+    max-width:1400px;
+    margin:0 auto;
+  }
+  h1{
+    font-size:clamp(1.6rem,3vw,2.4rem);
+    margin:0 0 8px;
+    letter-spacing:-.02em;
+  }
+  .subtitle{color:var(--muted);margin:0 0 22px;max-width:780px}
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  nav a{
+    color:var(--muted);
+    text-decoration:none;
+    font-size:.82rem;
+    padding:6px 12px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    transition:.15s;
+  }
+  nav a:hover{color:var(--text);border-color:var(--accent)}
+  main{max-width:1400px;margin:0 auto;padding:0 24px 80px}
+  section{padding-top:44px}
+  h2{
+    font-size:1.15rem;
+    margin:0 0 4px;
+    letter-spacing:-.01em;
+  }
+  .count{color:var(--muted);font-size:.82rem;margin-bottom:18px}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:18px;
+  }
+  figure{
+    margin:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+    transition:border-color .15s,transform .15s,box-shadow .15s;
+  }
+  figure:hover{
+    border-color:#3a4557;
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  .thumb{
+    display:block;
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    object-position:top center;
+    background:#0b0d11;
+    cursor:zoom-in;
+    border-bottom:1px solid var(--border);
+  }
+  figcaption{padding:12px 14px 14px}
+  .title{font-size:.92rem;font-weight:600;margin-bottom:2px}
+  .route{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.74rem;
+    color:var(--accent);
+    word-break:break-all;
+  }
+  footer{
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:.78rem;
+    text-align:center;
+    padding:22px;
+  }
+  .lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(5,7,10,.94);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    padding:40px 72px;
+  }
+  .lightbox.open{display:flex}
+  .lightbox img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    border-radius:8px;
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+  }
+  .lb-btn{
+    position:absolute;
+    background:rgba(255,255,255,.08);
+    color:var(--text);
+    border:1px solid var(--border);
+    width:44px;height:44px;
+    border-radius:50%;
+    font-size:1.2rem;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .lb-btn:hover{background:rgba(255,255,255,.18)}
+  .lb-prev{left:16px;top:50%;transform:translateY(-50%)}
+  .lb-next{right:16px;top:50%;transform:translateY(-50%)}
+  .lb-close{top:14px;right:16px}
+  .lb-caption{
+    position:absolute;
+    bottom:14px;left:0;right:0;
+    text-align:center;
+    color:var(--muted);
+    font-size:.82rem;
+    padding:0 80px;
+  }
+  @media (max-width:640px){
+    .lightbox{padding:60px 12px}
+    .lb-prev{left:4px}
+    .lb-next{right:4px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Niskala Web Application — Screenshots Gallery</h1>
+  <p class="subtitle">Screenshots captured from <code>http://localhost:3000</code>, covering unauthenticated public flows and authenticated dashboard modules (logged in as <code>tbudiman@gmail.com</code>).</p>
+  <nav>
+    <a href="#auth">1. Authentication &amp; Public</a>
+    <a href="#core">2. Dashboard &amp; Analytics</a>
+    <a href="#regional">3. Regional Intelligence</a>
+    <a href="#operations">4. API Keys &amp; Alerts</a>
+    <a href="#admin">5. Admin &amp; Quality</a>
+  </nav>
+</header>
+
+<main>
+  <section id="auth">
+    <h2>1. Authentication &amp; Public Pages</h2>
+    <div class="count">6 screenshots</div>
+    <div class="grid">
+      <figure><img class="thumb" loading="lazy" src="screenshots/01_login.png" alt="Masuk / Login"><figcaption><div class="title">Masuk / Login</div><div class="route">/login</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/02_register.png" alt="Daftar / Register"><figcaption><div class="title">Daftar / Register</div><div class="route">/register</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/02_after_login.png" alt="Setelah Login"><figcaption><div class="title">Setelah Login</div><div class="route">/dashboard</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/03_password_recovery.png" alt="Lupa Kata Sandi"><figcaption><div class="title">Lupa Kata Sandi</div><div class="route">/password-recovery</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/04_password_recovery_confirm.png" alt="Konfirmasi Pemulihan Kata Sandi"><figcaption><div class="title">Konfirmasi Pemulihan Kata Sandi</div><div class="route">/password-recovery/confirm</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/05_invitation.png" alt="Undangan Pengguna"><figcaption><div class="title">Undangan Pengguna</div><div class="route">/invitation</div></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="core">
+    <h2>2. Core Dashboard &amp; Content Analytics</h2>
+    <div class="count">5 screenshots</div>
+    <div class="grid">
+      <figure><img class="thumb" loading="lazy" src="screenshots/06_dashboard_overview.png" alt="Dashboard Utama Overview"><figcaption><div class="title">Dashboard Utama Overview</div><div class="route">/dashboard</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/07_dashboard_social_media.png" alt="Media Sosial"><figcaption><div class="title">Media Sosial</div><div class="route">/dashboard/social-media</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/08_dashboard_online_media.png" alt="Media Daring"><figcaption><div class="title">Media Daring</div><div class="route">/dashboard/online-media</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/09_dashboard_audience.png" alt="Analisis Audiens"><figcaption><div class="title">Analisis Audiens</div><div class="route">/dashboard/audience</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/10_dashboard_stream.png" alt="Aliran Konten Real-time"><figcaption><div class="title">Aliran Konten Real-time</div><div class="route">/dashboard/stream</div></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="regional">
+    <h2>3. Regional Intelligence Dashboards</h2>
+    <div class="count">4 screenshots</div>
+    <div class="grid">
+      <figure><img class="thumb" loading="lazy" src="screenshots/11_dashboard_regional_social.png" alt="Sosial Regional"><figcaption><div class="title">Sosial Regional</div><div class="route">/dashboard/regional/social</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/12_dashboard_regional_political.png" alt="Politik Regional"><figcaption><div class="title">Politik Regional</div><div class="route">/dashboard/regional/political</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/13_dashboard_regional_economy.png" alt="Ekonomi Regional"><figcaption><div class="title">Ekonomi Regional</div><div class="route">/dashboard/regional/economy</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/14_dashboard_regional_public.png" alt="Publik Regional"><figcaption><div class="title">Publik Regional</div><div class="route">/dashboard/regional/public</div></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="operations">
+    <h2>4. User Operations (API Keys &amp; Alerts)</h2>
+    <div class="count">5 screenshots</div>
+    <div class="grid">
+      <figure><img class="thumb" loading="lazy" src="screenshots/15_dashboard_api_keys.png" alt="Daftar Kunci API"><figcaption><div class="title">Daftar Kunci API</div><div class="route">/dashboard/api-keys</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/16_dashboard_api_keys_new.png" alt="Buat Kunci API Baru"><figcaption><div class="title">Buat Kunci API Baru</div><div class="route">/dashboard/api-keys/new</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/17_dashboard_alerts.png" alt="Daftar Aturan Alert"><figcaption><div class="title">Daftar Aturan Alert</div><div class="route">/dashboard/alerts</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/18_dashboard_alerts_new.png" alt="Form Aturan Alert Baru"><figcaption><div class="title">Form Aturan Alert Baru</div><div class="route">/dashboard/alerts/new</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/19_dashboard_alerts_edit_sample.png" alt="Edit Aturan Alert"><figcaption><div class="title">Edit Aturan Alert</div><div class="route">/dashboard/alerts/1/edit</div></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="admin">
+    <h2>5. Admin &amp; Quality Operations</h2>
+    <div class="count">5 screenshots</div>
+    <div class="grid">
+      <figure><img class="thumb" loading="lazy" src="screenshots/20_dashboard_tenants.png" alt="Manajemen Tenant"><figcaption><div class="title">Manajemen Tenant</div><div class="route">/dashboard/tenants</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/21_dashboard_analysis_review.png" alt="Verifikasi Analisis"><figcaption><div class="title">Verifikasi Analisis</div><div class="route">/dashboard/analysis-review</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/22_dashboard_issue_management.png" alt="Manajemen Isu Strategis"><figcaption><div class="title">Manajemen Isu Strategis</div><div class="route">/dashboard/issue-management</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/23_dashboard_pipeline_health.png" alt="Status Kesegaran Data Pipeline"><figcaption><div class="title">Status Kesegaran Data Pipeline</div><div class="route">/dashboard/pipeline-health</div></figcaption></figure>
+      <figure><img class="thumb" loading="lazy" src="screenshots/24_dashboard_add_item.png" alt="Tambah Item"><figcaption><div class="title">Tambah Item</div><div class="route">/dashboard/add-item</div></figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<footer>Niskala Web Application · 25 screenshots · Click any image to enlarge · Use ← → to navigate</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImage" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<script>
+(function(){
+  var thumbs = Array.prototype.slice.call(document.querySelectorAll('.thumb'));
+  var lb = document.getElementById('lightbox');
+  var lbImage = document.getElementById('lbImage');
+  var lbCaption = document.getElementById('lbCaption');
+  var index = 0;
+
+  function caption(i){
+    var fig = thumbs[i].closest('figure');
+    return fig.querySelector('.title').textContent + ' — ' + fig.querySelector('.route').textContent;
+  }
+  function show(i){
+    index = (i + thumbs.length) % thumbs.length;
+    lbImage.src = thumbs[index].src;
+    lbImage.alt = thumbs[index].alt;
+    lbCaption.textContent = caption(index) + '  (' + (index + 1) + '/' + thumbs.length + ')';
+  }
+  function open(i){
+    show(i);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  thumbs.forEach(function(t, i){
+    t.addEventListener('click', function(){ open(i); });
+  });
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', function(){ show(index - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ show(index + 1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
+})();
+</script>
+</body>
+</html>
